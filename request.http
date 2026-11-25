@@ -1,0 +1,68 @@
+###
+GET http://localhost:3000/api/getMedicamentos HTTP/1.1
+###
+GET http://localhost:3000/api/getDoctores HTTP/1.1
+###
+GET http://localhost:3000/api/getMedicamento/7 HTTP/1.1
+###
+GET http://localhost:3000/api/getDoctor/7 HTTP/1.1
+###
+POST http://localhost:3000/api/addMedicamento HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre_comercial":"prueba",
+    "stock":120,
+    "precio_unitario":45,
+    "via_administracion":"Oral",
+    "en_venta":1,
+    "id_laboratorio":"LAB005",
+    "requiere_receta":0,
+    "fecha_caducidad":"2029-01-25T06:00:00.000Z",
+    "unidades_empaque":14
+}
+
+###
+POST http://localhost:3000/api/addDoctor HTTP/1.1
+Content-Type: application/json
+
+{
+    "cedula": "MED123456",
+    "nombre": "prueba2",
+    "apellido_paterno": "Pérez",
+    "apellido_materno": "García",
+    "telefono": "5512345678",
+    "correo": "juan.perez@hospital.com",
+    "codigo_postal": "06000",
+    "pais_origen": "México",
+    "estado": 1
+}
+
+###
+DELETE http://localhost:3000/api/deleteMedicamento/7 HTTP/1.1
+###
+DELETE http://localhost:3000/api/deleteDoctor/6 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/updateMedicamento/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre_comercial":"prueba actualizacion 3"
+}
+
+###
+PUT http://localhost:3000/api/updateDoctor/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "cedula": "MED123456",
+    "nombre": "prueba3",
+    "apellido_paterno": "Pérez",
+    "apellido_materno": "García",
+    "telefono": "5512345678",
+    "correo": "juan.perez@hospital.com",
+    "codigo_postal": "06000",
+    "pais_origen": "México",
+    "estado": 1
+}
