@@ -6,6 +6,7 @@ function Sidebar(){
     return(
         <div className="Sidebar">
             <ul className="SidebarList">
+                <li className="rowEncabezado"> Menú de Opciones</li>
                 <li className="row"><NavLink to="/doctores"> Doctores </NavLink></li>
                 <li className="row"><NavLink to="/medicamentos"> Medicamentos </NavLink></li>
             </ul>
