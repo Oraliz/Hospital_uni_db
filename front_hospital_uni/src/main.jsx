@@ -6,6 +6,6 @@ import Tabla from './tabla.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Tabla />
+    <App />
   </StrictMode>,
 )
