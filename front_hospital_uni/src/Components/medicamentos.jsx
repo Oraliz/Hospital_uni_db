@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
+import Tabla from "../tabla.jsx";
+
 function MedicamentoScreen() {
     return (
         <div>
-            <h5>Pantalla medicamentos</h5>
+            <Tabla />
         </div>
     )
 }
