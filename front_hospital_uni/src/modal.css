@@ -1,0 +1,129 @@
+.Modal{
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left:0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContenido{
+    background-color: rgb(254, 254, 254);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.modalEncabezado{
+    display: flex;
+
+    h2{
+        color: rgb(0,0,0);
+        margin: 10px 0px 10px;
+
+    }
+    .btnCerrar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent ;
+        font-size: 20px;
+        margin: 10px 0px 10px;
+        margin-left: auto;
+    }
+}
+
+.cuerpoModal{
+    width: 600px;
+
+    .columnas{
+        display: flex;
+        gap: 20px;
+    }
+
+    .col1,
+    .col2{
+        width: 100%;
+    }
+
+    .campos{
+        margin: 0;
+        padding: 10px 10px 0px 10px;
+    }
+    input{
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(241, 241, 241);
+        outline: none;
+
+        &:focus{
+            border: 1px solid rgb(241, 241, 241);
+        }
+    }
+
+    .buttonGuardar{
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(227, 166, 237);
+        font-weight: 500;
+        width: 100%;
+        margin-top: 10px;
+
+    }
+}
+
+@media (max-width: 650px) {
+    .cuerpoModal{
+        width: 500px;
+    }
+}  
+
+@media (max-width: 540px) {
+
+    .modalEncabezado{
+        h2{
+            font-size: 18px;
+        }
+        .btnCerrar{
+            font-size: 18px;
+        }
+    }
+
+    .cuerpoModal{
+        width: 400px;
+        .columnas{
+            gap: 10px;
+        }
+        .campos{
+            font-size: 13px;
+        }
+        input{
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 10px;
+        }
+        .buttonGuardar{
+            font-size: 12px;
+            border-radius: 8px;
+            padding: 8px;
+        }
+    }
+}  
+
+@media (max-width: 440px) {
+    .cuerpoModal {
+        width: 280px;
+        .columnas{
+        display: block;
+        }
+    } 
+}
