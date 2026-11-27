@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import DoctorScreen from './Components/doctores'
 import MedicamentoScreen from './Components/medicamentos'
 import Sidebar from './Components/sidebar'

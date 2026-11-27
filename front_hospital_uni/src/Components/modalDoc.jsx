@@ -5,7 +5,6 @@ import './modal.css'
 function ModalEditarD({ isOpen, onClose}) {
   if (!isOpen) return null;
 
-  
   return (
     <>
 
@@ -43,15 +42,11 @@ function ModalEditarD({ isOpen, onClose}) {
                 <input type="text" placeholder="Estado" />
               </div>
             </div>
-
-
             <div classname="Btn-Guardar">
               <button type='button' className='buttonGuardar'>Guardar</button>
             </div>
           </form>
         </div>
-
-
       </div>
     </div>
 
@@ -60,4 +55,4 @@ function ModalEditarD({ isOpen, onClose}) {
   )
 }
 
-export default ModalEditar
+export default ModalEditarD

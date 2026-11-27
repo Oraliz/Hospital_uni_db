@@ -54,7 +54,7 @@ function ModalEditarM({ isOpen, onClose}) {
 
 )}
 
-export default ModalEditarD
+export default ModalEditarM
 
 
 /*import { useState } from 'react'
