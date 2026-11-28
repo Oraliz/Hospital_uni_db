@@ -1,8 +1,9 @@
 import React from "react";
+import TablaDoc from './tablaDoc.jsx';
 function DoctorScreen() {
     return (
         <div>
-            <h5>Pantalla de Doctores</h5>
+            <TablaDoc />
         </div>
     )
 }

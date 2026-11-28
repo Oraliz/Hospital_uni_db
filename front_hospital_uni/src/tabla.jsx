@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
+import ModalEditarM from "./Components/modalMed";
 
 function Tabla() {
+    const [isOpen, setIsOpen] = useState(false);
+
     const [medicamentos] = useState([
         {
             id: 1,
@@ -35,12 +38,6 @@ function Tabla() {
         setMedicamentoSeleccionado(medicamento);
     };
 
-    const editarMedicamento = () => {
-        if (medicamentoSeleccionado) {
-            console.log("Editar:", medicamentoSeleccionado);
-        }
-    };
-
     const eliminarMedicamento = () => {
         if (medicamentoSeleccionado) {
             console.log("Eliminar:", medicamentoSeleccionado);
@@ -52,13 +49,12 @@ function Tabla() {
             <h1 className="mb-4">Tabla de Medicamentos</h1>
 
             <div className="mb-3">
-                <button
-                    className="btn btn-warning me-2"
-                    disabled={!medicamentoSeleccionado}
-                    onClick={editarMedicamento}
-                >
-                    <FaEdit /> Editar
-                </button>
+                <div className='btn-EditMedicamento'>
+                    <button onClick={() => setIsOpen(true)} className='icon-button'> Editar Medicamento</button>
+                </div>
+                <ModalEditarM isOpen={isOpen} onClose={() => {setIsOpen(false); }} />
+
+
 
                 <button
                     className="btn btn-danger"

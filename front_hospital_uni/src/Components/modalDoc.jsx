@@ -7,11 +7,10 @@ function ModalEditarD({ isOpen, onClose}) {
 
   return (
     <>
-
     <div className="Modal">
       <div className='modalContenido'>
         <div className='modalEncabezado'>
-          <h2>Editar doctores</h2>
+          <h2 className='modalTitulo'>Editar doctores</h2>
           <button className='btnCerrar' onClick={onClose}>X</button>
         </div>
 
@@ -20,26 +19,26 @@ function ModalEditarD({ isOpen, onClose}) {
             <div className="columnas">
               <div className="col1">
                 <h4 className='campos'>Cedula</h4>
-                <input type="text" placeholder="Cedula" />
+                <input className='int-m' type="text" placeholder="Cedula" />
                 <h4 className='campos'>Nombre</h4>
-                <input type="text" placeholder="Nombre" />
+                <input className='int-m' type="text" placeholder="Nombre" />
                 <h4 className='campos'>Apellido Paterno</h4>
-                <input type="text" placeholder="Apellido Paterno" />
+                <input className='int-m' type="text" placeholder="Apellido Paterno" />
                 <h4 className='campos'>Apellido Materno</h4>
-                <input type="text" placeholder="Apellido Materno" />
+                <input className='int-m' type="text" placeholder="Apellido Materno" />
                 <h4 className='campos'>Telefono</h4>
-                <input type="tel" placeholder="Telefono" />
+                <input className='int-m' type="tel" placeholder="Telefono" />
                 <h4 className='campos'>Correo</h4>
-                <input type="email" placeholder="Correo" />
+                <input className='int-m' type="email" placeholder="Correo" />
               </div>
 
               <div className="col2">
                 <h4 className='campos'>Codigo Postal</h4>
-                <input type="text" placeholder="Codigo Postal" />
+                <input className='int-m' type="text" placeholder="Codigo Postal" />
                 <h4 className='campos'>País de Origen</h4>
-                <input type="text" placeholder="País de Origen" />
+                <input className='int-m' type="text" placeholder="País de Origen" />
                 <h4 className='campos'>Estado</h4>
-                <input type="text" placeholder="Estado" />
+                <input className='int-m' type="text" placeholder="Estado" />
               </div>
             </div>
             <div classname="Btn-Guardar">
